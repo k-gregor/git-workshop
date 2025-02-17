@@ -16,6 +16,8 @@ To prepare, please:
 2. a little hands-on workshop
 3. set up a git repository in your own code
 
+Note: I will focus on using the command line. You can also work with a user interface if you want. But the slides are for the command line. And I think it is good to do it at least once this way, to really know what is going on.
+
 ---
 # git vs github
 
@@ -330,8 +332,37 @@ git merge britney
 ```
 
 Whoopsie, that did not work! Both branches had edits to the `adele.txt` file. `git` did not know how to handle that.
-Note: In many cases, git **does** know how to handle that. But sometimes, like here, you need to tell it what to do.
+```
+Auto-merging workshopfile.txt
+CONFLICT (content): Merge conflict in workshopfile.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
 
+This is a so-called **merge conflict**.
+Note: In many cases, git **does** know how to handle that. But sometimes, like here, you need to tell it what to do.
+So you will take a look at the file, and keep only those lines that you want
+
+# resolving the merge conflict
+
+Let's look at the file that could not be merged (`adele.txt`). You should see something like this:
+
+```
+<<<<<<< HEAD
+I'm a genie in a bottle
+=======
+Hit me baby, one more time
+>>>>>>> britney
+```
+
+This tells you: on HEAD (your current position in the repository), there is the line "I'm a genie in a bottle". But coming from the `britney` branch, there is also the line "Hit me baby, one more time".
+Now imagine this is code: you will have to decide which changes to your code make sense. You could keep both, or only one, or none of them, as you desire! The weird lines (`<<<<`, `====`, and `>>>>`) are from git, and are used by graphical user interfaces to make merging easier than doing on the command line. But here we will just do that.
+I will keep both lines and change the files so that it looks like this (removing the git-lines):
+```
+I'm a genie in a bottle
+Hit me baby, one more time
+```
+
+Save the file. Check `git status`. It tells you you're still `unmerged` 
 # setting up a git repository in your code
 
 Very simple!
