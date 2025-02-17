@@ -317,7 +317,7 @@ Adding a file in a different branch is a simple situation. Where it gets interes
 	2. Write in "I'm a genie in a bottle"
 5. Add and commit the changes.
 
-The repository looks like this:
+The repository looks something like this (I ignored the previous merging of the Adele branch):
 
 ![](attachments/commits_main_adele_britney.png)
 
@@ -363,6 +363,30 @@ Hit me baby, one more time
 ```
 
 Save the file. Check `git status`. It tells you you're still `unmerged` 
+
+![[unmerged_paths.png]]
+
+Since we resolved the conflict, we can now add `adele.txt`
+```
+git add adele.txt
+```
+
+What is the status now?
+
+![](merge_resolved.png)
+
+
+So, we need to conclude the merge with
+```
+git commit
+```
+
+It will open an editor asking you for the commit message (Note, for some people, this will open the editor `vim` which is very complex. You exit `vim` by typing `:wq`).
+
+The repository looks like this now (check `git log` to see the merge commit)
+
+![](attachments/commits_adele_britney_merged.png)
+
 # setting up a git repository in your code
 
 Very simple!

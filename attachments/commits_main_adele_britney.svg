@@ -9,7 +9,7 @@
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="commits_main_adele_britney.svg"
-   inkscape:export-filename="commits_main_adele_britney.png"
+   inkscape:export-filename="commits_adele_britney_merged.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -130,6 +130,12 @@
        cy="68.812805"
        r="8.5276337" />
     <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#37c871;fill-opacity:1;stroke:#000000;stroke-width:1.038;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       id="circle1140"
+       cx="150.80309"
+       cy="68.812805"
+       r="8.5276337" />
+    <circle
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:1.038;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
        id="circle1168"
        cx="115.34888"
@@ -153,6 +159,60 @@
        id="path1770"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2);paint-order:fill markers stroke"
+       d="m 126.6582,43.326415 11.20139,10.717122"
+       id="path1806"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 142.67241,67.396765 7.38891,-7.112351"
+       id="path3966"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 142.86548,69.855882 9.35174,-9.010458"
+       id="path3976"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.999998;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="M 143.23499,72.144398 154.44955,61.332529"
+       id="path3978"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.999998;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 144.31836,73.742584 11.72483,-11.30532"
+       id="path3980"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="M 145.89178,74.866873 157.34115,63.827935"
+       id="path3982"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 147.01748,76.424115 11.1295,-10.729606"
+       id="path3984"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.999996;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 149.3036,76.859206 9.64265,-9.291789"
+       id="path3986"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.999996;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 151.91097,76.983626 7.18491,-6.915069"
+       id="path3988"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-15.485697,42.405738)"
@@ -160,9 +220,9 @@
        style="font-size:32px;font-variation-settings:normal;text-align:center;letter-spacing:0px;white-space:pre;shape-inside:url(#rect5394);display:inline;opacity:1;fill:#c4c8b7;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke;stop-color:#000000;stop-opacity:1"><tspan
          x="-153.2832"
          y="113.58476"
-         id="tspan898"><tspan
+         id="tspan952"><tspan
            style="font-weight:bold;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold'"
-           id="tspan896">main branch</tspan></tspan></text>
+           id="tspan950">main branch</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-10.19403,10.655736)"
@@ -170,19 +230,25 @@
        style="font-size:32px;font-variation-settings:normal;text-align:center;letter-spacing:0px;white-space:pre;shape-inside:url(#rect705);display:inline;opacity:1;fill:#c4c8b7;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke;stop-color:#000000;stop-opacity:1"><tspan
          x="-182.08789"
          y="113.58476"
-         id="tspan902"><tspan
+         id="tspan956"><tspan
            style="font-weight:bold;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold'"
-           id="tspan900">britney branch</tspan></tspan></text>
+           id="tspan954">britney branch</tspan></tspan></text>
     <circle
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#5f8dd3;fill-opacity:1;stroke:#000000;stroke-width:1.038;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       id="circle826"
+       id="circle904"
        cx="115.34888"
        cy="68.812805"
        r="8.5276337" />
     <path
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2)"
        d="m 92.547569,68.183913 8.169151,-0.10262"
-       id="path828"
+       id="path906"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2)"
+       d="m 124.29758,68.183913 8.16916,-0.10262"
+       id="path908"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
   </g>
