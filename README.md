@@ -17,7 +17,7 @@ To prepare, please:
 3. set up a git repository in your own code
 
 ---
-# git vs Github
+# git vs github
 
 - git: version control system:
 	- software that runs on your computer [http://git-scm.com/about](http://git-scm.com/about)
@@ -104,7 +104,7 @@ Now, let's edit the file called `workshopfile.txt`. Add your favorite Backstreet
 
 Save that file and run `git status` again:
 
-```
+```shell
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -187,6 +187,8 @@ What happened to `git status`?
 
 There we go! Our changes can be committed!!
 
+Note: if you have many edited files, you can add them with `git add .` (note the dot! It means "current directory")
+
 ---
 # committing changes
 
@@ -232,6 +234,9 @@ Now we're getting to another key concept of git, **branching**
 In our workshop, we're currently on the **main** branch. There are some commits by me, and the one that you just did. The repository looks something like this, there are no branches yet, just a few commits:
 
 ![](attachments/commits_main_only.png)
+
+---
+
 # creating a new branch
 
 Say we now want to work on a new feature of our code. If you work by yourself, you don't need to create a new branch for this, but it can be helpful. Maybe you want to try out two different methods. Branching allows you to have to different states of your code simultaneously.
@@ -239,13 +244,13 @@ This is especially important when collaborating with other people. Everyone can 
 We create the branch like this:
 
 ```
-git checkout -b adele_is_cooler_than_taylor
+git checkout -b adele_is_also_cool
 ```
 
 ---
 # creating a new file and committing it
 
-This is your task now: create a new text file called `workshopfile2.txt`, write some Adele lyrics into it, add it to the staging environment, and commit it.
+This is your task now: create a new text file called `adele.txt`, write some Adele lyrics into it, add it to the staging environment, and commit it.
 You should be able to see that everything worked using `git status` and `git log`.
 
 This is how the repository looks like:
@@ -254,8 +259,74 @@ This is how the repository looks like:
 
 # switching branches
 
+Take a look at the file structure now. There is `workshopfile.txt` and there is `adele.txt`. And of course, the `README.md` and the `attachments`. Git status tells us we're on the `adele_is_also_cool` branch.
+
+Now, lets switch branches back to **main**:
+
+```
+git checkout main
+```
+
+Remember what `checkout` means? It gives you the state of all files of a particular version of the code, in this case, from the `main` branch. What do you think will happen to the `adele.txt` file?
+
+---
+# where is adele?
+
+Well, Adele is gone! The file `adele.txt` **only** exists on the `adele_is_also_cool` branch, not on the `main` branch! You see that the two branches are separate states of the code! So now you can imagine how two people can work on quite different stuff at the same time without interfering with one another.
+
+How do we get Adele next to the main branch?
+
+With another core concept of `git`: **merging**
+
+---
+# merging
+
+Run the following command, **but** make sure you're actually on the `main` branch (use `git status`)
+
+```
+git merge adele_is_also_cool
+```
+
+This merges the content of the `adele_is_also_cool` into the `main` branch. The repository will look like this:
+
+![](attachments/commits_main_adele_merged.png)
 
 
+Check out `git log`! A new commit was added! A so-called **merge commit**.
+Check out `git status`! We're still on the `main` branch!
+Check out the files! Both `workshopfile.txt` and `adele.txt` are there!
+
+
+
+---
+
+# editing file in another branch
+
+Adding a file in a different branch is a simple situation. Where it gets interesting is when the a file is edited that exists on multiple branches. In theory, it works the same. But, what happens when the file is edited in both branches?
+
+##### Your task
+1. Create a new branch called `britney`. Edit the `adele.txt` file. Write in "Hit me baby, one more time"
+2. Add and commit the changes.
+3. Switch to `main` branch
+4. Edit the `adele.txt` file. Write in "I'm a genie in a bottle"
+5. Add and commit the changes.
+
+The repository looks like this:
+
+![](attachments/commits_main_adele_britney.png)
+
+---
+
+# merge conflicts
+
+Now, try to merge again the two branches (make sure you're on the `main` branch)
+
+```
+git merge britney
+```
+
+Whoopsie, that did not work! Both branches had edits to the `adele.txt` file. `git` did not know how to handle that.
+Note: In many cases, git **does** know how to handle that. But sometimes, like here, you need to tell it what to do.
 
 # setting up a git repository in your code
 
@@ -267,23 +338,6 @@ git init
 
 --- 
 
-# git status
+# adding files to the repository and committing them
 
-- tells us the status of the repository, in which state are the files?
-
-
-# git diff
-
-# git commit
-
-
-# git push
-
-
-# branches
-
-- 
-
-
-
-# merging
+You know how to do that! Select some files that you want to put into version control, add, and commit them!
