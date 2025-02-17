@@ -169,14 +169,50 @@ Ready? Let's go!
 
 # adding to staging area
 
+Let's look at `git status` quickly:
+![](gitstatusnotstaged.png)
 
+Aha! There are changes `not staged for commit`. So let's stage them!
+```
+git add workshopfile.txt
+```
 
-# checking the status of the repository
+What happened to `git status`?
+
+![](gitstatusstaged.png)
+
+There we go! Our changes can be committed!!
+
+# committing changes
+
+```
+git commit -m "I added my favorite Taylor Swift songtext"
+```
+
+Let's see what `git status` tells us now:
+
+![](attachments/gitstatuscommitted.png)
+
+Perfect. We have created a new commit, and we're ahead of the online copy now (the commit only exists locally!). With `git push` you could push this commit online, to have an online backup. Normally you would do that now, but we save this for later.
+
+# checking the history of the repository
 Now let's see what has happened in this repository.
 Run:
 ```bash
 git log
 ```
+
+You should see your last commit, and the ones that I have done to this repository previously.
+
+
+# quick recap
+
+- clone
+- status
+- diff
+- add
+- commit
+- push
 
 
 # setting up a git repository in your code
