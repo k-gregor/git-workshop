@@ -135,12 +135,16 @@ Now there are two options:
 1. we are happy with the changes and certain we want to keep them
 2. we are unhappy with the changes, and want to replace the Backstreet Boys text with Taylor Swift text
 
-You probably guessed it, I'd much rather go for Taylor than Nick Carter and his friends. So let's `revert` the changes!! How do we do that?
+You probably guessed it, I'd much rather go for Taylor than Nick Carter and his friends. So let's undo the changes!! How do we do that?
 
-# reverting unwanted changes
+# undoing unwanted changes
 
 Let's undo the Backstreet Boys test. One way of course, would be to go into the file, and change everything back to the way it was. This might be possible here, but think about a large project! `git` offers the easy solution to that:
+```
+git checkout workshopfile.txt
+```
 
+`checkout`, that's a weird way to say `undo`! 
 
 # checking the status of the repository
 Now let's see what has happened in this repository.
