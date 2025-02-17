@@ -158,6 +158,18 @@ Yup, everything back to normal.
 
 So now let's add some high quality music text in that file (or whatever you like).
 Check again `git status` and `git diff`
+![](gitidff2.png)
+
+Yes, these are the changes we want to keep! So let's do that. It is a two-step process.
+
+1. Add desired changes to the `staging area`
+2. Commit the changes
+
+Ready? Let's go!
+
+# adding to staging area
+
+
 
 # checking the status of the repository
 Now let's see what has happened in this repository.
