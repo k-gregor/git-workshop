@@ -59,6 +59,36 @@ To prepare, please:
 - diffing files
 
 ---
+# cloning an existing repository
+
+We are going to start by cloning this repository, and messing around with it. So please execute:
+
+```
+git clone https://github.com/k-gregor/git-workshop.git
+```
+
+This downloads the repository onto your computer.
+
+---
+
+# seeing the files
+
+- a new directory was created on your computer, `git-workshop`
+- use the explorer (or terminal) to see which files are contained
+- do not worry about a `.git` directory for now (in case you see that)
+
+---
+
+# checking the status of the files and editing them
+
+Let's first check the status of the local copy of the repository:
+```
+git status
+```
+You should see this message:
+
+
+
 # setting up a git repository in your code
 
 Very simple!
