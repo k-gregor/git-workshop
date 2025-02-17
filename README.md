@@ -399,6 +399,8 @@ Wow! You did a lot already! Let's recap what we did
 - merge
 - merge conflicts
 
+Note: there are MANY other things (like undoing commits), but we don't have the time...
+
 # setting up a git repository in your code
 
 Now, let's make your code a git repository! This is very simple! Just go into the directory and type:
@@ -419,3 +421,23 @@ You know how to do that! Select some files that you want to put into version con
 
 - Log in to www.github.com
 - Create new repository
+- Follow the steps to push the code, something like this:
+
+```
+git remote add origin git@github.com:<YOURNAME>/<YOURPROJECT>.git
+```
+
+Remember what `remote` meant? And `origin`?
+
+```
+git push -u origin main
+```
+
+
+From now on, you can simply write
+
+```
+git push
+```
+
+Whenever you have new code committed, and it's backed up!
