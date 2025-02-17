@@ -75,6 +75,8 @@ This downloads the repository onto your computer.
 
 - a new directory was created on your computer, `git-workshop`
 - use the explorer (or terminal) to see which files are contained
+	- You'll for instance see a `README.md` file (that's the file you're reading right now)
+	- There should also be a `workshopfile.txt`
 - do not worry about a `.git` directory for now (in case you see that)
 
 ---
@@ -86,7 +88,28 @@ Let's first check the status of the local copy of the repository:
 git status
 ```
 You should see this message:
+```
+On branch main
+Your branch is up to date with 'origin/main'.
 
+nothing to commit, working tree clean
+```
+So, you see that you're on branch a branch called `main` and that it is up to date. Up to date with what? With `origin`. What's that? Well, `origin` is the name of the `remote`. Huh?? It's simple: the `remote` is the "online copy" of your repository that (in this case) is stored on GitHub. We could give this remote another name, but `origin` is the standard. Honestly, you'll likely never have to deal with different remotes. For now, just remember that a `remote` is a online copy (or backup) of your code, and the default `remote` is called `origin`
+
+---
+
+# editing files
+
+Now, let's edit the file called `workshopfile.txt`. Add your favorite Backstreet's boys song text, your favorite joke, or simply let your cat walk over the keyboard: `asdfaisdgisudfhgkjsdfgkjadfg`.
+
+
+
+# checking the status of the repository
+Now let's see what has happened in this repository.
+Run:
+```
+git log
+```
 
 
 # setting up a git repository in your code
