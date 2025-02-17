@@ -88,7 +88,7 @@ Let's first check the status of the local copy of the repository:
 git status
 ```
 You should see this message:
-```
+```bash
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -98,16 +98,54 @@ So, you see that you're on branch a branch called `main` and that it is up to da
 
 ---
 
-# editing files
+# editing files and checking status
 
 Now, let's edit the file called `workshopfile.txt`. Add your favorite Backstreet's boys song text, your favorite joke, or simply let your cat walk over the keyboard: `asdfaisdgisudfhgkjsdfgkjadfg`.
 
+Save that file and run `git status` again:
+
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   workshopfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+Aha! It tells us that `workshopfile.txt` was modified! That's good!
+But wait, why does it tell us that we're still `up to date`? Well, because these changes are not `staged for commit`. We will learn what that means later. For now, Let's be happy that `git` saw that we modified the file.
+
+# seeing the changes
+
+So now let's see what actually changed! For this we can use the command
+```bash
+git diff
+```
+
+The output should be something like this:
+![](attachments/gitdiff.png)
+
+Don't worry about the stuff you don't understand from that output. But you should be able to see what changes were done to a file. This is already a huge benefit of `git`.
+
+Now there are two options:
+1. we are happy with the changes and certain we want to keep them
+2. we are unhappy with the changes, and want to replace the Backstreet Boys text with Taylor Swift text
+
+You probably guessed it, I'd much rather go for Taylor than Nick Carter and his friends. So let's `revert` the changes!! How do we do that?
+
+# reverting unwanted changes
+
+Let's undo the Backstreet Boys test. One way of course, would be to go into the file, and change everything back to the way it was. This might be possible here, but think about a large project! `git` offers the easy solution to that:
 
 
 # checking the status of the repository
 Now let's see what has happened in this repository.
 Run:
-```
+```bash
 git log
 ```
 
