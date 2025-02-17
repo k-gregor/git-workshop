@@ -308,7 +308,11 @@ Adding a file in a different branch is a simple situation. Where it gets interes
 1. Create a new branch called `britney`. Edit the `adele.txt` file. Write in "Hit me baby, one more time"
 2. Add and commit the changes.
 3. Switch to `main` branch
-4. Edit the `adele.txt` file. Write in "I'm a genie in a bottle"
+	1. check `git status`, there should be no changes to be committed!
+	2. (note: non-committed but staged changes are moved between branches!)
+4. Edit the `adele.txt` file. 
+	1. Check that the Britney line is not in there
+	2. Write in "I'm a genie in a bottle"
 5. Add and commit the changes.
 
 The repository looks like this:
