@@ -163,7 +163,7 @@ Yup, everything back to normal.
 
 So now let's add some high quality music text in that file (or whatever you like).
 Check again `git status` and `git diff`
-![](gitidff2.png)
+![](attachments/gitidff2.png)
 
 Yes, these are the changes we want to keep! So let's do that. It is a two-step process.
 
@@ -176,7 +176,7 @@ Ready? Let's go!
 # adding to staging area
 
 Let's look at `git status` quickly:
-![](gitstatusnotstaged.png)
+![](attachments/gitstatusnotstaged.png)
 
 Aha! There are changes `not staged for commit`. So let's stage them!
 ```
@@ -185,7 +185,7 @@ git add workshopfile.txt
 
 What happened to `git status`?
 
-![](gitstatusstaged.png)
+![](attachments/gitstatusstaged.png)
 
 There we go! Our changes can be committed!!
 
@@ -364,7 +364,7 @@ Hit me baby, one more time
 
 Save the file. Check `git status`. It tells you you're still `unmerged` 
 
-![[unmerged_paths.png]]
+![[attachments/unmerged_paths.png]]
 
 Since we resolved the conflict, we can now add `adele.txt`
 ```
@@ -373,7 +373,7 @@ git add adele.txt
 
 What is the status now?
 
-![](merge_resolved.png)
+![](attachments/merge_resolved.png)
 
 
 So, we need to conclude the merge with
@@ -387,9 +387,21 @@ The repository looks like this now (check `git log` to see the merge commit)
 
 ![](attachments/commits_adele_britney_merged.png)
 
+
+# recap
+
+Wow! You did a lot already! Let's recap what we did
+
+- branch
+- checkout
+- add
+- commit
+- merge
+- merge conflicts
+
 # setting up a git repository in your code
 
-Very simple!
+Now, let's make your code a git repository! This is very simple! Just go into the directory and type:
 
 ```
 git init
@@ -400,3 +412,10 @@ git init
 # adding files to the repository and committing them
 
 You know how to do that! Select some files that you want to put into version control, add, and commit them!
+
+---
+
+# setting up an online version control with github
+
+- Log in to www.github.com
+- Create new repository
