@@ -144,7 +144,20 @@ Let's undo the Backstreet Boys test. One way of course, would be to go into the 
 git checkout workshopfile.txt
 ```
 
-`checkout`, that's a weird way to say `undo`! 
+`checkout`, that's a weird way to say `undo`!  Well, it means that we want to check out the file at exactly the current commit. And since nothing was committed by us so far (we'll do that in a few minutes), this means we'll get the file in its state that it was when we downloaded it:
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+
+Yup, everything back to normal.
+
+# committing wanted changes
+
+So now let's add some high quality music text in that file (or whatever you like).
+Check again `git status` and `git diff`
 
 # checking the status of the repository
 Now let's see what has happened in this repository.
