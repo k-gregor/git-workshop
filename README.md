@@ -119,6 +119,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Aha! It tells us that `workshopfile.txt` was modified! That's good!
 But wait, why does it tell us that we're still `up to date`? Well, because these changes are not `staged for commit`. We will learn what that means later. For now, Let's be happy that `git` saw that we modified the file.
 
+---
 # seeing the changes
 
 So now let's see what actually changed! For this we can use the command
@@ -137,6 +138,7 @@ Now there are two options:
 
 You probably guessed it, I'd much rather go for Taylor than Nick Carter and his friends. So let's undo the changes!! How do we do that?
 
+---
 # undoing unwanted changes
 
 Let's undo the Backstreet Boys test. One way of course, would be to go into the file, and change everything back to the way it was. This might be possible here, but think about a large project! `git` offers the easy solution to that:
@@ -154,7 +156,8 @@ nothing to commit, working tree clean
 
 Yup, everything back to normal.
 
-# committing wanted changes
+---
+# committing desired changes
 
 So now let's add some high quality music text in that file (or whatever you like).
 Check again `git status` and `git diff`
@@ -167,6 +170,7 @@ Yes, these are the changes we want to keep! So let's do that. It is a two-step p
 
 Ready? Let's go!
 
+---
 # adding to staging area
 
 Let's look at `git status` quickly:
@@ -183,6 +187,7 @@ What happened to `git status`?
 
 There we go! Our changes can be committed!!
 
+---
 # committing changes
 
 ```
@@ -195,6 +200,7 @@ Let's see what `git status` tells us now:
 
 Perfect. We have created a new commit, and we're ahead of the online copy now (the commit only exists locally!). With `git push` you could push this commit online, to have an online backup. Normally you would do that now, but we save this for later.
 
+---
 # checking the history of the repository
 Now let's see what has happened in this repository.
 Run:
@@ -204,8 +210,10 @@ git log
 
 You should see your last commit, and the ones that I have done to this repository previously.
 
-
+---
 # quick recap
+
+Before we go to different topic, let's recap the commands we learned so far:
 
 - clone
 - status
@@ -213,6 +221,40 @@ You should see your last commit, and the ones that I have done to this repositor
 - add
 - commit
 - push
+
+---
+# branching
+
+Now we're getting to another key concept of git, **branching**
+![](attachments/commits.png)
+
+
+In our workshop, we're currently on the **main** branch. There are some commits by me, and the one that you just did. The repository looks something like this, there are no branches yet, just a few commits:
+
+![](attachments/commits_main_only.png)
+# creating a new branch
+
+Say we now want to work on a new feature of our code. If you work by yourself, you don't need to create a new branch for this, but it can be helpful. Maybe you want to try out two different methods. Branching allows you to have to different states of your code simultaneously.
+This is especially important when collaborating with other people. Everyone can have their own branch, and thus does not mess with the code of the others.
+We create the branch like this:
+
+```
+git checkout -b adele_is_cooler_than_taylor
+```
+
+---
+# creating a new file and committing it
+
+This is your task now: create a new text file called `workshopfile2.txt`, write some Adele lyrics into it, add it to the staging environment, and commit it.
+You should be able to see that everything worked using `git status` and `git log`.
+
+This is how the repository looks like:
+
+![](attachments/commits_main_adele.png)
+
+# switching branches
+
+
 
 
 # setting up a git repository in your code
