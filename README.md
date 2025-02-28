@@ -6,8 +6,14 @@ To prepare, please:
 
 1. install `git` on your machine
 	1. [http://git-scm.com/about](http://git-scm.com/about)
-	2. Windows: git bash
+	2. Windows: git bash (https://gitforwindows.org)
 2. Create an account on www.github.com
+3. configure your git locally, so people online can see who made the changes
+
+```bash
+git config --global user.name "Your name"  
+git config --global user.email "your@email.de"
+```
 
 ---
 # what are we gonna do today?
@@ -70,6 +76,13 @@ git clone https://github.com/k-gregor/git-workshop.git
 ```
 
 This downloads the repository onto your computer.
+
+**Note:** For those unfamiliar with the command line, `pwd` shows the directory that you're in. `cd <DIRECTORY>` changes directories, `ls` lists the files and directories.
+
+**Note:** for some windows users, it's apparently necessary to adapt the command above to this:
+```
+git clone https://github.com/k-gregor/git-workshop
+```
 
 ---
 
@@ -213,6 +226,7 @@ git log
 ```
 
 You should see your last commit, and the ones that I have done to this repository previously.
+**Note:** use `q` to get out of the log.
 
 ---
 # quick recap
@@ -222,9 +236,9 @@ Before we go to different topic, let's recap the commands we learned so far:
 - clone
 - status
 - diff
+- checkout
 - add
 - commit
-- push
 
 ---
 # branching
@@ -302,7 +316,7 @@ Check out the files! Both `workshopfile.txt` and `adele.txt` are there!
 
 ---
 
-# editing file in another branch
+# editing files in multiple branches
 
 Adding a file in a different branch is a simple situation. Where it gets interesting is when the a file is edited that exists on multiple branches. In theory, it works the same. But, what happens when the file is edited in both branches?
 
@@ -417,7 +431,7 @@ You know how to do that! Select some files that you want to put into version con
 
 ---
 
-# setting up an online version control with github
+# setting up an online version control with github and backing up your code
 
 - Log in to www.github.com
 - Create new repository
