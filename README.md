@@ -22,7 +22,7 @@ git config --global user.email "your@email.de"
 2. a little hands-on workshop
 3. set up a git repository in your own code
 
-Note: I will focus on using the command line. You can also work with a user interface if you want. But the slides are for the command line. And I think it is good to do it at least once this way, to really know what is going on.
+**Note:** I will focus on using the command line, which might be a bit intimidating at first. You can also work with a user interface if you want. But the slides are for the command line, because then they can be used by everyone whereas with specific tools, everything works a bit different. I also think it is good to do it at least once this way, to really know what is going on.
 
 ---
 # git vs github
@@ -60,6 +60,8 @@ Note: I will focus on using the command line. You can also work with a user inte
 
 ---
 # demonstration in my IDE (integrated developer environment)
+
+An IDE is where you normally develop your code, like VS Code, CLion, or RStudio. They all have version control tooling and you can:
 
 - showing the log of commits
 - going back in time
@@ -300,7 +302,8 @@ With another core concept of `git`: **merging**
 Run the following command, **but** make sure you're actually on the `main` branch (use `git status`)
 
 ```
-git merge adele_is_also_cool
+git checkout main
+git merge adele_is_also_cool (<-- the BRANCH name)
 ```
 
 This merges the content of the `adele_is_also_cool` into the `main` branch. The repository will look like this:
@@ -308,7 +311,7 @@ This merges the content of the `adele_is_also_cool` into the `main` branch. The 
 ![](attachments/commits_main_adele_merged.png)
 
 
-Check out `git log`! A new commit was added! A so-called **merge commit**.
+Check out `git log`! A new commit was added! A so-called **merge commit**. TODO
 Check out `git status`! We're still on the `main` branch!
 Check out the files! Both `workshopfile.txt` and `adele.txt` are there!
 
@@ -436,12 +439,14 @@ You know how to do that! Select some files that you want to put into version con
 - Log in to www.github.com
 - Create new repository
 - Follow the steps to push the code, something like this:
+	- **Note**: use public repository
+	- **Note**: use HTTPS in the setup
 
 ```
-git remote add origin git@github.com:<YOURNAME>/<YOURPROJECT>.git
+git remote add origin https://github.com/<YOUR GITHUB NAME>/<YOUR GITHUB REPO NAME>.git
 ```
 
-Remember what `remote` meant? And `origin`?
+Remembgit push -u origin masterer what `remote` meant? And `origin`?
 
 ```
 git push -u origin main
@@ -455,3 +460,9 @@ git push
 ```
 
 Whenever you have new code committed, and it's backed up!
+
+---
+
+### final steps
+
+- set up git in your IDE (RStudio)
