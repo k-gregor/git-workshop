@@ -446,7 +446,7 @@ You know how to do that! Select some files that you want to put into version con
 git remote add origin https://github.com/<YOUR GITHUB NAME>/<YOUR GITHUB REPO NAME>.git
 ```
 
-Remembgit push -u origin masterer what `remote` meant? And `origin`?
+Remember what `remote` meant? And `origin`?
 
 ```
 git push -u origin main
