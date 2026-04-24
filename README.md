@@ -19,7 +19,7 @@ git config --global user.email "your@email.de"
 # what are we gonna do today?
 
 1. explain git and github
-2. a little hands-on workshop
+2. a little hands-on workshop for the most important aspects: committing, branching, merging, pushing
 3. set up a git repository in your own code
 
 **Note:** I will focus on using the command line, which might be a bit intimidating at first. You can also work with a user interface if you want. But the slides are for the command line, because then they can be used by everyone whereas with specific tools, everything works a bit different. I also think it is good to do it at least once this way, to really know what is going on.
@@ -68,6 +68,16 @@ An IDE is where you normally develop your code, like VS Code, CLion, or RStudio.
 - showing current changes
 - diffing files
 
+
+---
+# Preparation step: forking a repository
+
+This step creates your own copy of the repository on Github. You can then mess with it as much as you want, and push it back to the web without messing with anyone else's stuff.
+So as a first step, create your own `fork` of this repository: In your browser, click the Fork button:
+
+![](attachments/fork.png)
+
+
 ---
 # cloning an existing repository
 
@@ -81,7 +91,7 @@ This downloads the repository onto your computer.
 
 **Note:** For those unfamiliar with the command line, `pwd` shows the directory that you're in. `cd <DIRECTORY>` changes directories, `ls` lists the files and directories.
 
-**Note:** for some windows users, it's apparently necessary to adapt the command above to this:
+**Note:** for some windows users, it's apparently necessary to adapt the command above to this (i.e., remove the '.git' at the end):
 ```
 git clone https://github.com/k-gregor/git-workshop
 ```
@@ -381,7 +391,7 @@ Hit me baby, one more time
 
 Save the file. Check `git status`. It tells you you're still `unmerged` 
 
-![[attachments/unmerged_paths.png]]
+![](attachments/unmerged_paths.png)
 
 Since we resolved the conflict, we can now add `adele.txt`
 ```
