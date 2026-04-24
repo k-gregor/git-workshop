@@ -2,18 +2,22 @@
 
 # Prerequisites
 
-To prepare, please:
+To prepare, please do the following. It's a bit annoying, but you only have to do it once.
 
 1. install `git` on your machine
 	1. [http://git-scm.com/about](http://git-scm.com/about)
 	2. Windows: git bash (https://gitforwindows.org)
 2. Create an account on www.github.com
-3. configure your git locally, so people online can see who made the changes
+3. configure your git locally, so people online can see who made the changes:
 
 ```bash
 git config --global user.name "Your name"  
 git config --global user.email "your@email.de"
 ```
+
+4. On github.com create a new token: Go to Settings -> Developer Settings -> Personal access tokens --> Tokens (classic) --> Generate new token (classic)
+
+Simply put 'git workshop' as note, and give it an expiration time of 30 days. Click on the `repo` checkbox. Copy the generated token and store it safely. Don't worry, if you lose it you can create a new one.
 
 ---
 # what are we gonna do today?
@@ -233,7 +237,25 @@ Let's see what `git status` tells us now:
 
 ![](attachments/gitstatuscommitted.png)
 
-Perfect. We have created a new commit, and we're ahead of the online copy now (the commit only exists locally!). With `git push` you could push this commit online, to have an online backup. Normally you would do that now, but we save this for later.
+Perfect. We have created a new commit, and we're **ahead of the online copy** now. The commit only exists locally!. But of course, we want to back this up online! So let's do that now!
+
+---
+
+
+# pushing local changes to the internet
+
+To get your local changes backed up online you need one simple command: `git push`
+Now you will be asked to put your username and password. But probably this won't work for you and you see this:
+
+![](pushreject.png)
+
+This is because you have to put your **token** there, not your password. I know, this is all super confusing, But once it's set up, it works (see prerequisite steps above)!
+
+Trying again `git push` with username and token:
+
+![](push.png)
+
+If you go to your repository on Github, you will also see your changes there! So your code is backed up =)
 
 ---
 # checking the history of the repository
@@ -257,6 +279,7 @@ Before we go to different topic, let's recap the commands we learned so far:
 - checkout
 - add
 - commit
+- push
 
 ---
 # branching
