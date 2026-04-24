@@ -1,6 +1,6 @@
 
 
-
+# Prerequisites
 
 To prepare, please:
 
@@ -77,28 +77,33 @@ So as a first step, create your own `fork` of this repository: In your browser, 
 
 ![](attachments/fork.png)
 
+You can keep all the settings:
+
+![](attachments/fork2.png)
+
+Now, there's your unique copy of our workshop in your github account, residing at `https://github.com/<YOUR_GITHUB_USERNAME>/git-workshop`
 
 ---
-# cloning an existing repository
+# Let's start: cloning an existing repository
 
-We are going to start by cloning this repository, and messing around with it. So please execute:
+Now we are going to start for real. The first step is cloning the workshop repository (actually, your fork of it), and messing around with it. So please execute the following command (put your Github username in the URL):
 
 ```
-git clone https://github.com/k-gregor/git-workshop.git
+git clone https://github.com/<YOUR_GITHUB_USERNAME>/git-workshop.git
 ```
 
-This downloads the repository onto your computer.
-
-**Note:** For those unfamiliar with the command line, `pwd` shows the directory that you're in. `cd <DIRECTORY>` changes directories, `ls` lists the files and directories.
+This downloads the repository onto your computer, into the current directory.
 
 **Note:** for some windows users, it's apparently necessary to adapt the command above to this (i.e., remove the '.git' at the end):
 ```
-git clone https://github.com/k-gregor/git-workshop
+git clone https://github.com/<YOUR_GITHUB_USERNAME>/git-workshop
 ```
 
 ---
 
 # seeing the files
+
+Now let's see what happened after the clone command. Use the terminal (or the explorer) to verify:
 
 - a new directory was created on your computer, `git-workshop`
 - use the explorer (or terminal) to see which files are contained
@@ -106,6 +111,7 @@ git clone https://github.com/k-gregor/git-workshop
 	- There should also be a `workshopfile.txt`
 - do not worry about a `.git` directory for now (in case you see that)
 
+**Note:** For those unfamiliar with the command line, `pwd` shows the directory that you're in. `cd <DIRECTORY>` changes directories, `ls` lists the files and directories.
 ---
 
 # checking the status of the files and editing them
