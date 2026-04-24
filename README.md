@@ -503,6 +503,11 @@ Whenever you have new code committed, and it's backed up!
 
 ---
 
-### final steps
+# final remarks
 
-- set up git in your IDE (RStudio)
+- There are many more features to git, but these are the most important ones
+- As a best practice, commit often! That makes is easy to find buts, and ensures that everything is backed up
+- Set up git in your IDE (RStudio etc.)
+- If you'd like more workshops like this, please go to my website, we offer such courses for many topics for scientific groups: https://www.konstantin-gregor.com
+- If you need a break, please also check out my science parody youtube channel: https://www.youtube.com/@scienceparodysongs
+- 
