@@ -116,6 +116,7 @@ Now let's see what happened after the clone command. Use the terminal (or the ex
 - do not worry about a `.git` directory for now (in case you see that)
 
 **Note:** For those unfamiliar with the command line, `pwd` shows the directory that you're in. `cd <DIRECTORY>` changes directories, `ls` lists the files and directories.
+
 ---
 
 # checking the status of the files and editing them
