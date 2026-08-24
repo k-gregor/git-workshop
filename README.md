@@ -16,8 +16,8 @@ git config --global user.name "Your name"
 git config --global user.email "your@email.de"
 ```
 
-4. On github.com create a new token: Go to Settings -> Developer Settings -> Personal access tokens --> Tokens (classic) --> Generate new token (classic)
-
+4. On github.com create a new token: Go to Profile picture (top-right) -> Settings -> scroll left sidebar to bottom -> Developer settings -> Personal access tokens --> Tokens (classic) --> Generate new token (classic)
+   
 Simply put 'git workshop' as note, and give it an expiration time of 30 days. Click on the `repo` checkbox. Copy the generated token and store it safely. Don't worry, if you lose it you can create a new one.
 
 ---
